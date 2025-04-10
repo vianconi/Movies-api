@@ -3,7 +3,7 @@ from django.contrib.auth.models import AbstractUser
 
 
 class CustomUser(AbstractUser):
-    birthdate = models.DateField(null=True, blank=True)
+    date_of_birth = models.DateField(null=True, blank=True)
 
     def __str__(self):
         return self.username
